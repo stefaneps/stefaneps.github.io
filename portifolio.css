@@ -1,12 +1,12 @@
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, ul {
             color: whitesmoke;
 
         }
 
         body {
             background-color: rgb(51, 10, 88);
-            text-align: center;
             font-family: 'Cinzel', serif;
+            padding: 1%;
         }
 
         h3 {
@@ -16,23 +16,35 @@ h1, h2, h3, h4, p {
 
         h1 {
             font-size: 50px;
+            text-align: center;
         }
 
-        img {
+        .image-container {
+            height: 320px;
+        }
+
+        .photo {
             border-radius: 50%;
+            float: left;
+            padding: 9px;
+            background-color: whitesmoke;
         }
 
         h2 {
-            font-size: 35px;
+            font-size: 30px;
         }
 
-        p {
-            font-size: 25px;
+        p, ul {
+            font-size: 19px;
+        }
 
+        p.about {
+            position: absolute;
+            left: 360px
         }
 
         h4 {
-            font-size: 30px;
+            font-size: 25px;
             text-decoration: underline;
             font-weight: bold;
         }
@@ -41,4 +53,9 @@ h1, h2, h3, h4, p {
         .link {
             background-color: white;
             text-decoration: none;
+            padding: 2px;
+        }
+
+        ul li:nth-child(odd) {
+            font-style: italic;
         }
